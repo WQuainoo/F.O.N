@@ -1,5 +1,9 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
 .container {
-  background-color: #111;
   position: relative;
   width: 100%;
   height: 100vh;
@@ -98,5 +102,22 @@
 
 .intro {
   display: inline-block;
+}
+
+nav {
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  min-height: 8vh;
+  background-color: #9fa9bd;
+  font-family: 'Quicksand', sans-serif;
+  font-family: 'Raleway', sans-serif;
+  font-family: 'Red Hat Display', sans-serif;
 }
 /*# sourceMappingURL=nature.css.map */
