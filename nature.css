@@ -29,21 +29,61 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  top: 65px;
-  right: 195px;
   padding: 10px 30px;
   z-index: 1;
   color: yellow;
   font-size: 30px;
   letter-spacing: 5px;
+  text-decoration: none;
+  overflow: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-box-reflect: below 2px linear-gradient(transparent, brown);
 }
 
-.begin::before {
+.begin:hover {
+  background: orange;
+  color: #111;
+  -webkit-box-shadow: 0 0  50px orangered;
+          box-shadow: 0 0  50px orangered;
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+}
+
+.begin:before {
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
+  width: 10px;
+  height: 10px;
   border-top: 2px solid orange;
   border-left: 2px solid orange;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.begin:hover:before {
+  width: 100%;
+  height: 100%;
+}
+
+.begin:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  border-bottom: 2px solid orange;
+  border-right: 2px solid orange;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.begin:hover:after {
+  width: 100%;
+  height: 100%;
 }
 
 .homebg {
