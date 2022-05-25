@@ -15,10 +15,35 @@
     font-family: 'Red Hat Display', sans-serif;
 }
 
+.begin{
+    position: relative;
+    align-items:center;
+    justify-content: center;
+    top:65px;
+    right:195px;
+    padding: 10px 30px;
+    z-index: 1;
+    color: yellow;
+    font-size:30px;
+    letter-spacing: 5px;
+}
+
+.begin::before{
+    position:absolute;
+    top:0;
+    left:0;
+    border-top: 2px solid orange;
+    border-left: 2px solid orange;
+}
+
 .homebg{
 position: absolute;
 top: 0;
 left: 0;
 width: 100%;
+}
+
+.intro{
+    display: inline-block
 }
 
