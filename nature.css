@@ -3,7 +3,12 @@
   padding: 0px;
 }
 
+body::-webkit-scrollbar {
+  width: 0.25;
+}
+
 .container {
+  background-color: #111;
   position: relative;
   width: 100%;
   height: 100vh;
@@ -27,18 +32,10 @@
 }
 
 .begin {
-  position: relative;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  position: absolute;
   padding: 10px 30px;
-  top: 65px;
-  right: 15%;
   z-index: 1;
-  color: yellow;
+  color: gray;
   font-size: 30px;
   letter-spacing: 5px;
   text-decoration: none;
@@ -49,10 +46,10 @@
 }
 
 .begin:hover {
-  background: orange;
-  color: #111;
-  -webkit-box-shadow: 0 0  50px orangered;
-          box-shadow: 0 0  50px orangered;
+  background: midnightblue;
+  color: whitesmoke;
+  -webkit-box-shadow: 0 0  50px;
+          box-shadow: 0 0  50px;
   -webkit-transition-delay: 0.5s;
           transition-delay: 0.5s;
 }
@@ -64,8 +61,8 @@
   left: 0;
   width: 10px;
   height: 10px;
-  border-top: 2px solid orange;
-  border-left: 2px solid orange;
+  border-top: 2px solid midnightblue;
+  border-left: 2px solid midnightblue;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -82,8 +79,8 @@
   right: 0;
   width: 10px;
   height: 10px;
-  border-bottom: 2px solid orange;
-  border-right: 2px solid orange;
+  border-bottom: 2px solid midnightblue;
+  border-right: 2px solid midnightblue;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -95,9 +92,6 @@
 
 .homebg {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
 }
 
 .intro {
@@ -106,18 +100,49 @@
 
 nav {
   z-index: 1;
+  position: relative;
+  width: 50%;
+  top: 40%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  min-height: 8vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 4vh;
   background-color: #9fa9bd;
   font-family: 'Quicksand', sans-serif;
   font-family: 'Raleway', sans-serif;
   font-family: 'Red Hat Display', sans-serif;
+}
+
+.links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 80%;
+}
+
+.links li {
+  list-style: none;
+}
+
+.links a {
+  color: aquamarine;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 1024px) {
+  .links {
+    width: 60%;
+  }
 }
 /*# sourceMappingURL=nature.css.map */
