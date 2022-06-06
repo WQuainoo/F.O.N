@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Raleway:wght@100&family=Red+Hat+Display:ital,wght@1,300&display=swap");
 * {
   margin: 0px;
   padding: 0px;
@@ -113,10 +114,56 @@ nav {
       -ms-flex-pack: center;
           justify-content: center;
   min-height: 4vh;
-  background-color: #9fa9bd;
+  padding: 30px;
+}
+
+nav button {
+  background: none;
+  margin: 1em;
+  padding: 1em 2em;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 25px;
   font-family: 'Quicksand', sans-serif;
   font-family: 'Raleway', sans-serif;
   font-family: 'Red Hat Display', sans-serif;
+}
+
+.earth {
+  --color: #805b42;
+  --hover: #805c42;
+}
+
+.water {
+  --color: #4779c9;
+  --hover: #4777c9;
+}
+
+.air {
+  --color: #9fbbbd;
+  --hover: #9fbbbd;
+}
+
+.fire {
+  --color: #960503;
+  --hover: #960703;
+}
+
+nav button:hover,
+nav button:focus {
+  -webkit-box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+          box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  border-color: var(--hover);
+  color: #fff;
+  -webkit-transform: translateY(-0.25em);
+          transform: translateY(-0.25em);
+}
+
+.earth {
+  color: var(--color);
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
 }
 
 .links {
@@ -132,17 +179,9 @@ nav {
   list-style: none;
 }
 
-.links a {
-  color: aquamarine;
-  text-decoration: none;
-  letter-spacing: 3px;
-  font-weight: bold;
-  font-size: 16px;
-}
-
 @media screen and (max-width: 1024px) {
   .links {
-    width: 60%;
+    width: 40%;
   }
 }
 /*# sourceMappingURL=nature.css.map */

@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Raleway:wght@100&family=Red+Hat+Display:ital,wght@1,300&display=swap');
+
+
 *{
     margin: 0px;
     padding: 0px;
@@ -103,10 +106,49 @@ nav{
     align-items: center;
     justify-content: center;
     min-height: 4vh;
-    background-color: rgb(159, 169, 189);
+   // background-color: rgb(159, 169, 189);
+    padding: 30px;
+    
+}
+
+nav button{
+    background: none;
+    margin: 1em;
+    padding: 1em 2em;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 25px;
     font-family: 'Quicksand', sans-serif;
     font-family: 'Raleway', sans-serif;
     font-family: 'Red Hat Display', sans-serif;
+}
+
+$colors: (
+    earth: #805b42,
+    water: #4779c9,
+    air: #9fbbbd,
+    fire: #960503
+);
+
+@each $button, $color in $colors{
+    .#{$button} {
+        --color: #{$color};
+        --hover: #{adjust-hue($color, 1deg)};
+    }
+}
+
+nav button:hover, 
+nav button:focus{
+    box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+    border-color: var(--hover);
+    color: #fff;
+    transform: translateY(-.25em);
+}
+
+.earth{
+    color: var(--color);
+    transition: 0.25s;
 }
 
 .links{
@@ -119,17 +161,10 @@ nav{
     list-style: none;
 }
 
-.links a{
-    color:aquamarine;
-    text-decoration: none;
-    letter-spacing: 3px;
-    font-weight:bold;
-    font-size:16px;
-}
 
 @media screen and (max-width:1024px){
     .links{
-        width: 60%;
+        width: 40%;
     }
 };
 
