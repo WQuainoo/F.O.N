@@ -124,7 +124,7 @@ nav button {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 25px;
+  font-size: 20px;
   font-family: 'Quicksand', sans-serif;
   font-family: 'Raleway', sans-serif;
   font-family: 'Red Hat Display', sans-serif;
@@ -173,9 +173,6 @@ nav button:focus {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   width: 80%;
-}
-
-.links li {
   list-style: none;
 }
 
