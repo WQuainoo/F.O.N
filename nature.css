@@ -1,3 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Raleway:wght@100&family=Red+Hat+Display:ital,wght@1,300&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body::-webkit-scrollbar {
+  width: 0.25;
+}
+
 .container {
   background-color: #111;
   position: relative;
@@ -23,18 +33,11 @@
 }
 
 .begin {
-  position: relative;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  display: none;
+  position: absolute;
   padding: 10px 30px;
-  top: 65px;
-  right: 15%;
   z-index: 1;
-  color: yellow;
+  color: gray;
   font-size: 30px;
   letter-spacing: 5px;
   text-decoration: none;
@@ -45,10 +48,10 @@
 }
 
 .begin:hover {
-  background: orange;
-  color: #111;
-  -webkit-box-shadow: 0 0  50px orangered;
-          box-shadow: 0 0  50px orangered;
+  background: midnightblue;
+  color: whitesmoke;
+  -webkit-box-shadow: 0 0  50px;
+          box-shadow: 0 0  50px;
   -webkit-transition-delay: 0.5s;
           transition-delay: 0.5s;
 }
@@ -60,8 +63,8 @@
   left: 0;
   width: 10px;
   height: 10px;
-  border-top: 2px solid orange;
-  border-left: 2px solid orange;
+  border-top: 2px solid midnightblue;
+  border-left: 2px solid midnightblue;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -78,8 +81,8 @@
   right: 0;
   width: 10px;
   height: 10px;
-  border-bottom: 2px solid orange;
-  border-right: 2px solid orange;
+  border-bottom: 2px solid midnightblue;
+  border-right: 2px solid midnightblue;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -89,14 +92,177 @@
   height: 100%;
 }
 
-.homebg {
+.intro {
+  display: inline-block;
+}
+
+nav {
+  z-index: 1;
+  position: relative;
+  width: 50%;
+  top: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 4vh;
+  padding: 30px;
+}
+
+nav button {
+  background: none;
+  margin: 1em;
+  padding: .5em;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: 'Quicksand', sans-serif;
+  font-family: 'Raleway', sans-serif;
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+.earth {
+  --color: #805b42;
+  --hover: #805c42;
+}
+
+.water {
+  --color: #4779c9;
+  --hover: #4777c9;
+}
+
+.air {
+  --color: #9fbbbd;
+  --hover: #9fbbbd;
+}
+
+.fire {
+  --color: #960503;
+  --hover: #960703;
+}
+
+nav button:hover,
+nav button:focus {
+  -webkit-box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+          box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  border-color: var(--hover);
+  color: #fff;
+  -webkit-transform: translateY(-0.25em);
+          transform: translateY(-0.25em);
+}
+
+.earth {
+  color: var(--color);
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.earth.active::after {
+  -webkit-transform: translateY(-0.25em);
+          transform: translateY(-0.25em);
+}
+
+.earth.active:focus {
+  border-color: #fff;
+  -webkit-box-shadow: #fff;
+          box-shadow: #fff;
+}
+
+.links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 80%;
+  list-style: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .links {
+    width: 40%;
+  }
+}
+
+.stability {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  height: 100%;
+  background: #805b42;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.stability::before {
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 70%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.1);
 }
 
-.intro {
-  display: inline-block;
+.stability.active {
+  left: 0;
+}
+
+.stability h1 {
+  position: absolute;
+  top: 75%;
+  left: 20px;
+  font-size: 10em;
+  font-weight: 100px;
+  opacity: 30%;
+  letter-spacing: 25px;
+  color: #302118;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.stability h2 {
+  position: absolute;
+  top: 30px;
+  left: 20%;
+  color: #e3dfdf;
+  font-size: 2em;
+  letter-spacing: .3em;
+  font-family: 'Raleway', sans-serif;
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+.rock {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 70%;
+}
+
+.earthlogo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.earthquotes {
+  position: absolute;
+  background-color: #302118;
+  margin-top: 12em;
+  margin-right: 30%;
+  padding: 8em 2em;
+  color: #e3dfdf;
+  font-size: 15px;
+  font-family: 'Raleway', sans-serif;
+  font-family: 'Red Hat Display', sans-serif;
 }
 /*# sourceMappingURL=nature.css.map */
