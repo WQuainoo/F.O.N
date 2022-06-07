@@ -215,6 +215,32 @@ nav button:focus {
   left: 0;
 }
 
+.stability h1 {
+  position: absolute;
+  top: 75%;
+  left: 20px;
+  font-size: 10em;
+  font-weight: 100px;
+  opacity: 30%;
+  letter-spacing: 25px;
+  color: #302118;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.stability h2 {
+  position: absolute;
+  top: 30px;
+  left: 20%;
+  color: #e3dfdf;
+  font-size: 2em;
+  letter-spacing: .3em;
+  font-family: 'Raleway', sans-serif;
+  font-family: 'Red Hat Display', sans-serif;
+}
+
 .rock {
   height: 100%;
   position: absolute;
@@ -226,5 +252,17 @@ nav button:focus {
   position: absolute;
   top: 20px;
   left: 20px;
+}
+
+.earthquotes {
+  position: absolute;
+  background-color: #302118;
+  margin-top: 12em;
+  margin-right: 30%;
+  padding: 8em 2em;
+  color: #e3dfdf;
+  font-size: 15px;
+  font-family: 'Raleway', sans-serif;
+  font-family: 'Red Hat Display', sans-serif;
 }
 /*# sourceMappingURL=nature.css.map */
