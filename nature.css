@@ -170,6 +170,8 @@ nav button:focus {
 
 .earth.active:focus {
   border-color: #fff;
+  -webkit-box-shadow: #fff;
+          box-shadow: #fff;
 }
 
 .links {
@@ -218,5 +220,11 @@ nav button:focus {
   position: absolute;
   top: 0;
   left: 70%;
+}
+
+.earthlogo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
 }
 /*# sourceMappingURL=nature.css.map */
