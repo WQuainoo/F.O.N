@@ -31,7 +31,7 @@ width: 0.25;
 //Button Effects
 
 .begin{
-    //display:none;
+    display:none;
     position: absolute;
     padding: 10px 30px;
     z-index: 1;
@@ -86,16 +86,17 @@ width: 0.25;
     height: 100%;
 }
 
-//
-.homebg{
-position: absolute;
-}
+// .homebg{
+// position: absolute;
+// width: 100;
+// height: auto;
+// }
 
 .intro{
     display: inline-block
 }
 
-//Dynamic Nav
+Nav
 
 nav{
     z-index:1;
@@ -106,7 +107,6 @@ nav{
     align-items: center;
     justify-content: center;
     min-height: 4vh;
-   // background-color: rgb(159, 169, 189);
     padding: 30px;
     
 }
@@ -164,3 +164,30 @@ nav button:focus{
     }
 };
 
+//Earth Section
+.stability{
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    background: #805b42;
+    transition: 1s;
+}
+
+.stability::before{
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 100%;
+    background: rgba(0,0,0,0.1);
+}
+
+.rock{
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 70%;
+}
