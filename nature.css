@@ -96,7 +96,6 @@ body::-webkit-scrollbar {
   display: inline-block;
 }
 
-Nav
 nav {
   z-index: 1;
   position: relative;
@@ -118,7 +117,7 @@ nav {
 nav button {
   background: none;
   margin: 1em;
-  padding: 1em 2em;
+  padding: .5em;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
@@ -164,6 +163,15 @@ nav button:focus {
   transition: 0.25s;
 }
 
+.earth.active::after {
+  -webkit-transform: translateY(-0.25em);
+          transform: translateY(-0.25em);
+}
+
+.earth.active:focus {
+  border-color: #fff;
+}
+
 .links {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -199,6 +207,10 @@ nav button:focus {
   width: 70%;
   height: 100%;
   background: rgba(0, 0, 0, 0.1);
+}
+
+.stability.active {
+  left: 0;
 }
 
 .rock {
