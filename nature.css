@@ -180,7 +180,29 @@ nav button:focus {
   transition: 0.25s;
 }
 
+.water.active::after {
+  -webkit-transform: translateY(-0.25em);
+          transform: translateY(-0.25em);
+}
+
 .water.active:focus {
+  border-color: #fff;
+  -webkit-box-shadow: #fff;
+          box-shadow: #fff;
+}
+
+.air {
+  color: var(--color);
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.air.active::after {
+  -webkit-transform: translateY(-0.25em);
+          transform: translateY(-0.25em);
+}
+
+.air.active:focus {
   border-color: #fff;
   -webkit-box-shadow: #fff;
           box-shadow: #fff;
@@ -257,7 +279,7 @@ nav button:focus {
   height: 100%;
   position: absolute;
   top: 0;
-  left: 70%;
+  left: 0;
 }
 
 .earthlogo {
@@ -280,7 +302,7 @@ nav button:focus {
 
 .flow {
   position: absolute;
-  top: -120%;
+  top: -100%;
   left: 0;
   width: 100%;
   height: 100%;
@@ -311,7 +333,7 @@ nav button:focus {
   font-weight: 100px;
   opacity: 30%;
   letter-spacing: 25px;
-  color: #253857;
+  color: #6e94d1;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -338,8 +360,8 @@ nav button:focus {
 .river {
   height: 100%;
   position: absolute;
-  top: 0;
-  left: 70%;
+  top: -55.1%;
+  left: 0%;
 }
 
 .waterquotes {
@@ -347,6 +369,82 @@ nav button:focus {
   background-color: #253857;
   margin-top: 12em;
   margin-right: 30%;
+  padding: 8em 2em;
+  color: #e3dfdf;
+  font-size: 15px;
+  font-family: 'Raleway', sans-serif;
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+.freedom {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: #9fbbbd;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.freedom::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: -70%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.freedom.active {
+  left: 0;
+}
+
+.freedom h1 {
+  position: absolute;
+  top: 75%;
+  right: 20px;
+  font-size: 10em;
+  font-weight: 100px;
+  opacity: 30%;
+  letter-spacing: 25px;
+  color: #3c5254;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.freedom h2 {
+  position: absolute;
+  top: 30px;
+  right: 20%;
+  color: #e3dfdf;
+  font-size: 2em;
+  letter-spacing: .3em;
+  font-family: 'Raleway', sans-serif;
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+.wind {
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: -25%;
+}
+
+.airlogo {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.airquotes {
+  position: absolute;
+  background-color: #3c5254;
+  margin-top: 12em;
+  margin-left: 30%;
   padding: 8em 2em;
   color: #e3dfdf;
   font-size: 15px;
