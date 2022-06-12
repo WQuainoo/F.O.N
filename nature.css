@@ -25,18 +25,44 @@ body::-webkit-scrollbar {
           justify-content: center;
 }
 
-.container h1 {
-  z-index: 1;
-  color: lightcoral;
+.FON {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.FON h1 {
+  position: relative;
+  color: #cfcfcf;
   font-family: 'Raleway', sans-serif;
   font-family: 'Red Hat Display', sans-serif;
+  text-transform: uppercase;
+}
+
+span {
+  opacity: 0;
+  -webkit-transition: all 3s ease;
+  transition: all 3s ease;
+  -webkit-transform: translateY(50px);
+          transform: translateY(50px);
+  display: inline-block;
+  letter-spacing: 20px;
+}
+
+span.fade {
+  opacity: 1;
+  -webkit-transform: translateY(1px);
+          transform: translateY(1px);
 }
 
 nav {
-  z-index: 1;
-  position: relative;
+  position: absolute;
   width: 50%;
-  top: 40%;
+  top: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

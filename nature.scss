@@ -21,21 +21,38 @@ width: 0.25;
     justify-content: center;
 }
 
-.container h1{
-    z-index: 1;
-    color: lightcoral;
-    font-family: 'Raleway', sans-serif;
-    font-family: 'Red Hat Display', sans-serif;
+.FON{
+    position: relative;
+    display:flex;
+    align-items:center;
 }
 
+.FON h1{
+    position: relative;
+    color: rgb(207, 207, 207);
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Red Hat Display', sans-serif;
+    text-transform: uppercase;
+}
 
+span{
+    opacity: 0;
+    transition: all 3s ease;
+    transform: translateY(50px);
+    display: inline-block;
+    letter-spacing: 20px;
+}
+
+span.fade{
+    opacity: 1;
+    transform: translateY(1px);
+}
 //Nav
 
 nav{
-    z-index:1;
-    position:relative;
+    position:absolute;
     width: 50%;
-    top: 40%;
+    top: 80%;
     display: flex;
     align-items: center;
     justify-content: center;
