@@ -50,6 +50,7 @@ span.fade{
 //Nav
 
 nav{
+    z-index: 1;
     position:absolute;
     width: 50%;
     top: 80%;
@@ -302,9 +303,9 @@ nav button:focus{
 }
 
 .river{
-    height: 100%;
+    height: 50%;
     position: absolute;
-    top: -55.1%;
+    top: -44.50%;
     left: 0%;
 }
 
