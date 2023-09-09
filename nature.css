@@ -197,7 +197,8 @@ nav button:focus {
   font-size: 10em;
   font-weight: 100px;
   letter-spacing: 25px;
-  color: #7a5137;
+  color: #d2d2d2;
+  opacity: 30%;
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
@@ -214,6 +215,14 @@ nav button:focus {
   letter-spacing: 0.3em;
   font-family: "Raleway", sans-serif;
   font-family: "Red Hat Display", sans-serif;
+}
+
+.stability p {
+  position: absolute;
+  top: 30%;
+  font-family: "Raleway", sans-serif;
+  font-family: "Red Hat Display", sans-serif;
+  color: #d2d2d2;
 }
 
 .rock {
