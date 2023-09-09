@@ -13,65 +13,46 @@ body::-webkit-scrollbar {
   position: relative;
   width: 100%;
   height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   overflow: hidden;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .FON {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .FON h1 {
   position: relative;
-  color: #cfcfcf;
-  font-family: 'Raleway', sans-serif;
-  font-family: 'Red Hat Display', sans-serif;
+  color: rgb(207, 207, 207);
+  font-family: "Raleway", sans-serif;
+  font-family: "Red Hat Display", sans-serif;
   text-transform: uppercase;
 }
 
 span {
   opacity: 0;
-  -webkit-transition: all 3s ease;
   transition: all 3s ease;
-  -webkit-transform: translateY(50px);
-          transform: translateY(50px);
+  transform: translateY(50px);
   display: inline-block;
   letter-spacing: 20px;
 }
 
 span.fade {
   opacity: 1;
-  -webkit-transform: translateY(1px);
-          transform: translateY(1px);
+  transform: translateY(1px);
 }
 
 nav {
   position: absolute;
   width: 50%;
   top: 80%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   min-height: 4vh;
   padding: 30px;
 }
@@ -79,14 +60,14 @@ nav {
 nav button {
   background: none;
   margin: 1em;
-  padding: .5em;
+  padding: 0.5em;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 20px;
-  font-family: 'Quicksand', sans-serif;
-  font-family: 'Raleway', sans-serif;
-  font-family: 'Red Hat Display', sans-serif;
+  font-family: "Quicksand", sans-serif;
+  font-family: "Raleway", sans-serif;
+  font-family: "Red Hat Display", sans-serif;
 }
 
 .earth {
@@ -111,88 +92,71 @@ nav button {
 
 nav button:hover,
 nav button:focus {
-  -webkit-box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
-          box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
   border-color: var(--hover);
   color: #fff;
-  -webkit-transform: translateY(-0.25em);
-          transform: translateY(-0.25em);
+  transform: translateY(-0.25em);
 }
 
 .earth {
   color: var(--color);
-  -webkit-transition: 0.25s;
   transition: 0.25s;
 }
 
 .earth.active::after {
-  -webkit-transform: translateY(-0.25em);
-          transform: translateY(-0.25em);
+  transform: translateY(-0.25em);
 }
 
 .earth.active:focus {
   border-color: #fff;
-  -webkit-box-shadow: #fff;
-          box-shadow: #fff;
+  box-shadow: #fff;
 }
 
 .water {
   color: var(--color);
-  -webkit-transition: 0.25s;
   transition: 0.25s;
 }
 
 .water.active::after {
-  -webkit-transform: translateY(-0.25em);
-          transform: translateY(-0.25em);
+  transform: translateY(-0.25em);
 }
 
 .water.active:focus {
   border-color: #fff;
-  -webkit-box-shadow: #fff;
-          box-shadow: #fff;
+  box-shadow: #fff;
 }
 
 .air {
   color: var(--color);
-  -webkit-transition: 0.25s;
   transition: 0.25s;
 }
 
 .air.active::after {
-  -webkit-transform: translateY(-0.25em);
-          transform: translateY(-0.25em);
+  transform: translateY(-0.25em);
 }
 
 .air.active:focus {
   border-color: #fff;
-  -webkit-box-shadow: #fff;
-          box-shadow: #fff;
+  box-shadow: #fff;
 }
 
 .fire {
   color: var(--color);
-  -webkit-transition: 0.25s;
   transition: 0.25s;
 }
 
 .fire.active::after {
-  -webkit-transform: translateY(-0.25em);
-          transform: translateY(-0.25em);
+  transform: translateY(-0.25em);
 }
 
 .fire.active:focus {
   border-color: #fff;
-  -webkit-box-shadow: #fff;
-          box-shadow: #fff;
+  box-shadow: #fff;
 }
 
 .links {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   width: 80%;
   list-style: none;
 }
@@ -202,7 +166,6 @@ nav button:focus {
     width: 40%;
   }
 }
-
 .stability {
   position: absolute;
   top: 0;
@@ -210,12 +173,11 @@ nav button:focus {
   width: 100%;
   height: 100%;
   background: #805b42;
-  -webkit-transition: 1s;
   transition: 1s;
 }
 
 .stability::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -231,27 +193,27 @@ nav button:focus {
 .stability h1 {
   position: absolute;
   top: 75%;
-  left: 20px;
+  right: 20px;
   font-size: 10em;
   font-weight: 100px;
-  opacity: 30%;
   letter-spacing: 25px;
-  color: #302118;
+  color: #7a5137;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
+  font-family: "Raleway", sans-serif;
+  font-family: "Red Hat Display", sans-serif;
 }
 
 .stability h2 {
   position: absolute;
   top: 30px;
   left: 20%;
-  color: #e3dfdf;
+  color: rgb(227, 223, 223);
   font-size: 2em;
-  letter-spacing: .3em;
-  font-family: 'Raleway', sans-serif;
-  font-family: 'Red Hat Display', sans-serif;
+  letter-spacing: 0.3em;
+  font-family: "Raleway", sans-serif;
+  font-family: "Red Hat Display", sans-serif;
 }
 
 .rock {
@@ -263,20 +225,18 @@ nav button:focus {
 
 .earthlogo {
   position: absolute;
-  top: 20px;
-  left: 20px;
 }
 
 .earthquotes {
   position: absolute;
-  background-color: #302118;
-  margin-top: 12em;
-  margin-right: 30%;
-  padding: 8em 2em;
-  color: #e3dfdf;
+  background-color: rgba(48, 33, 24, 0.7);
+  margin-top: 15%;
+  margin-right: 45%;
+  padding: 7em 2em;
+  color: rgb(227, 223, 223);
   font-size: 15px;
-  font-family: 'Raleway', sans-serif;
-  font-family: 'Red Hat Display', sans-serif;
+  font-family: "Raleway", sans-serif;
+  font-family: "Red Hat Display", sans-serif;
 }
 
 .flow {
@@ -286,12 +246,11 @@ nav button:focus {
   width: 100%;
   height: 100%;
   background: #4779c9;
-  -webkit-transition: 1s;
   transition: 1s;
 }
 
 .flow::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -315,7 +274,6 @@ nav button:focus {
   color: #6e94d1;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
 }
 
@@ -323,11 +281,11 @@ nav button:focus {
   position: absolute;
   top: 30px;
   left: 20%;
-  color: #e3dfdf;
+  color: rgb(227, 223, 223);
   font-size: 2em;
-  letter-spacing: .3em;
-  font-family: 'Raleway', sans-serif;
-  font-family: 'Red Hat Display', sans-serif;
+  letter-spacing: 0.3em;
+  font-family: "Raleway", sans-serif;
+  font-family: "Red Hat Display", sans-serif;
 }
 
 .waterlogo {
@@ -349,10 +307,10 @@ nav button:focus {
   margin-top: 12em;
   margin-right: 30%;
   padding: 8em 2em;
-  color: #e3dfdf;
+  color: rgb(227, 223, 223);
   font-size: 15px;
-  font-family: 'Raleway', sans-serif;
-  font-family: 'Red Hat Display', sans-serif;
+  font-family: "Raleway", sans-serif;
+  font-family: "Red Hat Display", sans-serif;
 }
 
 .freedom {
@@ -362,12 +320,11 @@ nav button:focus {
   width: 100%;
   height: 100%;
   background: #9fbbbd;
-  -webkit-transition: 1s;
   transition: 1s;
 }
 
 .freedom::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   right: 0;
@@ -391,7 +348,6 @@ nav button:focus {
   color: #3c5254;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
 }
 
@@ -399,11 +355,11 @@ nav button:focus {
   position: absolute;
   top: 30px;
   right: 20%;
-  color: #e3dfdf;
+  color: rgb(227, 223, 223);
   font-size: 2em;
-  letter-spacing: .3em;
-  font-family: 'Raleway', sans-serif;
-  font-family: 'Red Hat Display', sans-serif;
+  letter-spacing: 0.3em;
+  font-family: "Raleway", sans-serif;
+  font-family: "Red Hat Display", sans-serif;
 }
 
 .wind {
@@ -425,10 +381,10 @@ nav button:focus {
   margin-top: 12em;
   margin-left: 30%;
   padding: 8em 2em;
-  color: #e3dfdf;
+  color: rgb(227, 223, 223);
   font-size: 15px;
-  font-family: 'Raleway', sans-serif;
-  font-family: 'Red Hat Display', sans-serif;
+  font-family: "Raleway", sans-serif;
+  font-family: "Red Hat Display", sans-serif;
 }
 
 .passion {
@@ -438,12 +394,11 @@ nav button:focus {
   width: 100%;
   height: 100%;
   background: #960503;
-  -webkit-transition: 1s;
   transition: 1s;
 }
 
 .passion::before {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
@@ -467,7 +422,6 @@ nav button:focus {
   color: #4c1b1b;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
 }
 
@@ -475,11 +429,11 @@ nav button:focus {
   position: absolute;
   top: 30px;
   left: 20%;
-  color: #e3dfdf;
+  color: rgb(227, 223, 223);
   font-size: 2em;
-  letter-spacing: .3em;
-  font-family: 'Raleway', sans-serif;
-  font-family: 'Red Hat Display', sans-serif;
+  letter-spacing: 0.3em;
+  font-family: "Raleway", sans-serif;
+  font-family: "Red Hat Display", sans-serif;
 }
 
 .firelogo {
@@ -491,7 +445,7 @@ nav button:focus {
 .flame {
   height: 100%;
   position: absolute;
-  bottom: -.1%;
+  bottom: -0.1%;
   left: 0;
 }
 
@@ -501,9 +455,8 @@ nav button:focus {
   margin-top: 12em;
   margin-right: 30%;
   padding: 8em 2em;
-  color: #e3dfdf;
+  color: rgb(227, 223, 223);
   font-size: 15px;
-  font-family: 'Raleway', sans-serif;
-  font-family: 'Red Hat Display', sans-serif;
-}
-/*# sourceMappingURL=nature.css.map */
+  font-family: "Raleway", sans-serif;
+  font-family: "Red Hat Display", sans-serif;
+}/*# sourceMappingURL=nature.css.map */

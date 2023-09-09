@@ -1,0 +1,8 @@
+version: '3'
+services:
+  webserver:
+    image: funnature
+    ports:
+      - "80:80"
+    volumes:
+      - ./F.O.N:/usr/local/apache2/htdocs/
