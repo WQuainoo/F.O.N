@@ -1,36 +1,24 @@
-let earthSlide = document.querySelector('.earth')
-let mountain = document.querySelector('.stability')
+const elements = [
+    { slide: document.querySelector('.earth'), content: document.querySelector('.stability') },
+    { slide: document.querySelector('.water'), content: document.querySelector('.flow') },
+    { slide: document.querySelector('.air'), content: document.querySelector('.freedom') },
+    { slide: document.querySelector('.fire'), content: document.querySelector('.passion') }
+];
 
-let waterSlide = document.querySelector('.water')
-let river = document.querySelector('.flow')
-
-let airSlide = document.querySelector('.air')
-let airy = document.querySelector('.freedom')
-
-let fireSlide = document.querySelector('.fire')
-let flames = document.querySelector('.passion')
-
-earthSlide.onclick = function()
-{
-    earthSlide.classList.toggle('active');
-    mountain.classList.toggle('active')
+function handleSlideToggle(clickedIndex) {
+    elements.forEach((element, index) => {
+        if (index === clickedIndex) {
+            element.slide.classList.toggle('active');
+            element.content.classList.toggle('active');
+        } else {
+            element.slide.classList.remove('active');
+            element.content.classList.remove('active');
+        }
+    });
 }
 
-waterSlide.onclick = function()
-{
-    waterSlide.classList.toggle('active');
-    river.classList.toggle('active')
-}
-
-airSlide.onclick = function()
-{
-    airSlide.classList.toggle('active');
-    airy.classList.toggle('active')
-}
-
-fireSlide.onclick = function()
-{
-    fireSlide.classList.toggle('active');
-    flames.classList.toggle('active')
-}
-
+elements.forEach((element, index) => {
+    element.slide.onclick = function() {
+        handleSlideToggle(index);
+    };
+});
