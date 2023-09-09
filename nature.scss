@@ -200,13 +200,14 @@ nav button:focus{
 .stability h1{
     position: absolute;
     top: 75%;
-    left: 20px;
+    right: 20px;
     font-size: 10em;
     font-weight: 100px;
-    opacity: 30%;
     letter-spacing: 25px;
-    color:#302118;
+    color:#7a5137;
     user-select: none;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Red Hat Display', sans-serif;
 }
 
 .stability h2{
@@ -229,16 +230,14 @@ nav button:focus{
 
 .earthlogo{
     position: absolute;
-    top: 20px;
-    left: 20px;
 }
 
 .earthquotes{
     position:absolute;
-    background-color:#302118;
-    margin-top: 12em;
-    margin-right: 30%;
-    padding: 8em 2em;
+    background-color: rgba(48, 33, 24, .7);
+    margin-top: 15%;
+    margin-right: 45%;
+    padding: 7em 2em;
     color: rgb(227, 223, 223);
     font-size: 15px;
     font-family: 'Raleway', sans-serif;
